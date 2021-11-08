@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export const Navbar = () => {
+export default function Navbar () {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
