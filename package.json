@@ -1,26 +1,12 @@
 {
-  "name": "portfolio",
-  "private": true,
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "build:css": "postcss styles/tailwind.css -o styles/main.css",
-    "build:watch": "postcss styles/tailwind.css -o styles/main.css --watch",
-    "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
+    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w"
   },
-  "dependencies": {
-    "autoprefixer": "^10.4.0",
-    "next": "12.0.3",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "tailwindcss": "^2.2.19"
-  },
-  "devDependencies": {
-    "eslint": "7",
-    "eslint-config-next": "12.0.3"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
